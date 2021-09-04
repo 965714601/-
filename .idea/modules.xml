@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01.稀疏数组/01.稀疏数组.iml" filepath="$PROJECT_DIR$/01.稀疏数组/01.稀疏数组.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02.数组模拟队列/02.数组模拟队列.iml" filepath="$PROJECT_DIR$/02.数组模拟队列/02.数组模拟队列.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DataStructure.iml" filepath="$PROJECT_DIR$/.idea/DataStructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/稀疏数组/稀疏数组.iml" filepath="$PROJECT_DIR$/稀疏数组/稀疏数组.iml" />
     </modules>
   </component>
 </project>

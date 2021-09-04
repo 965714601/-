@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="" />
+    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01.稀疏数组/01.稀疏数组.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01.稀疏数组/稀疏数组.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/02.数组模拟队列.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/数组模拟队列.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/稀疏数组/src/sparseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/稀疏数组/src/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/稀疏数组/稀疏数组.iml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +28,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1xetljNwEo3k6XOXSIGrnbRtAKV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sparseMatrix" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/02.数组模拟队列" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29307806" />
@@ -47,7 +65,7 @@
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="稀疏数组" />
+      <module name="02.数组模拟队列" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,11 +100,61 @@
       <option name="presentableId" value="Default" />
       <updated>1630727534857</updated>
       <workItem from="1630727536147" duration="1815000" />
-      <workItem from="1630729435885" duration="9789000" />
+      <workItem from="1630729435885" duration="17244000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/test.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/test.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
