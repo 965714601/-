@@ -12,25 +12,46 @@ public class Test {
         LinkedNode<String> Second = new LinkedNode<>(Third, "Second");
         LinkedNode<String> First = new LinkedNode<>(Second, "First");
 
-//        LinkedNode head = new LinkedNode<String>(First,null);
+
         LinkedNode head = LinkedNode.init();
         head.add(First);
         head.printLinkedNode();
 
         System.out.println("-------------------------------------------------");
 
-        head.add(new LinkedNode("Five"));
+        head.add(new LinkedNode(null,"Five"));
         head.printLinkedNode();
 
         System.out.println("-------------------------------------------------");
-        System.out.println(head.findByData("Second"));
+       head.findByData("Second");
 
         System.out.println("-------------------------------------------------");
         head.modifyNode("第一","First");
         head.printLinkedNode();
 
+
+
         System.out.println("-------------------------------------------------");
-        boolean b = head.deleteByData("Third");
+
+        head.deleteByData("Five");
         head.printLinkedNode();
+
+        System.out.println("-------------------------------------------------");
+        System.out.println("链表的有效个数： " + head.getLinkedLength());
+
+        System.out.println("-------------------------------------------------");
+        System.out.println("倒数第二个的节点：" + head.findByNumber(2).getData());
+
+        System.out.println("反转前，后续遍历链表: ");
+        head.printReverseLinked();
+
+        System.out.println("-------------------------------------------------");
+        head.reverseLinked();
+        head.printLinkedNode();
+
+        System.out.println("-------------------------------------------------");
+        System.out.println("反转后，后续遍历链表: ");
+        head.printReverseLinked();
     }
+
 }

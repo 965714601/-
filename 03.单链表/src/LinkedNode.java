@@ -10,6 +10,18 @@ public class LinkedNode<T> {
     private T data;
 
 
+    public LinkedNode(T data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 
     public LinkedNode(LinkedNode linkedNode, T data){
         this.next = linkedNode;
@@ -21,17 +33,6 @@ public class LinkedNode<T> {
      * */
     public static LinkedNode init(){
         return head;
-    }
-
-    public static void headAddNext(LinkedNode linkedNode){
-        head.next = linkedNode;
-    }
-
-
-
-    public LinkedNode(T data) {
-        this.data = data;
-        this.next = null;
     }
 
     /**
@@ -87,7 +88,7 @@ public class LinkedNode<T> {
      * 删除节点
      * */
 
-    public boolean deleteByData(T data){
+    public  boolean deleteByData(T data){
 
         LinkedNode pre = head;
 
@@ -113,7 +114,7 @@ public class LinkedNode<T> {
      * 打印链表
      * */
 
-    public void printLinkedNode(){
+    public  void printLinkedNode(){
         System.out.println("打印链表开始---------------");
         LinkedNode linkedNode = this;
         while(linkedNode.next != null) {
@@ -124,5 +125,106 @@ public class LinkedNode<T> {
     }
 
 
+    /**
+     * 打印链表的有效个数
+     * */
+
+    public  int getLinkedLength(){
+        int total = 0;
+        LinkedNode linkedNode = head;
+        while (linkedNode.next != null){
+            total++;
+            linkedNode = linkedNode.next;
+        }
+
+        return total;
+    }
+
+    /**
+     * 查找倒数第k个节点
+     **/
+
+    public  LinkedNode findByNumber(int lastNumber){
+
+        if (lastNumber <= 0 || head.getLinkedLength() < lastNumber || head.next == null)
+            return null;
+
+        LinkedNode linkedNode = head.next;
+        int length = head.getLinkedLength() - lastNumber;
+
+        while (length != 0){
+            length--;
+            linkedNode = linkedNode.next;
+        }
+
+        return linkedNode;
+    }
+
+
+    /**
+     * 链表的反转
+     * */
+
+    public  void reverseLinked(){
+        LinkedNode newLinkedNode = new LinkedNode<String>(null,null);
+        LinkedNode oldLinkedNode = head.next;
+        LinkedNode next = null;
+
+        while(oldLinkedNode != null){
+          next = oldLinkedNode.next;    //保存旧链表的当前节点的下一个节点
+          oldLinkedNode.next = newLinkedNode.next;  //把旧链表的当前节点的下一个节点指向新节点头的下一个节点
+          newLinkedNode.next = oldLinkedNode;   //把新链表的下一个节点指向旧链表的当前节点
+          oldLinkedNode = next;  //旧链表的当前节点指向下一个节点
+        }
+        head.next = newLinkedNode.next;
+    }
+
+    public  void printReverseLinked(){
+        LinkedNode arr[] = new LinkedNode[head.getLinkedLength()];
+
+        LinkedNode linkedNode = head.next;
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = linkedNode;
+            linkedNode = linkedNode.next;
+        }
+
+
+
+        for (int i = arr.length - 1; i >= 0 ; i--) {
+            System.out.println("第" + (i+1) + "个: " + arr[i].getData());
+        }
+    }
+
+    /**
+     * 合并有序链表
+     * */
+
+    public  LinkedNode combineLinked(LinkedNode head1,LinkedNode head2){
+        LinkedNode<Integer> head = new LinkedNode<>(null, null);
+        if (head1.next == null && head2.next == null)
+            return null;
+
+        LinkedNode linkedNode = head;
+        head1 = head1.next;
+        head2 = head2.next;
+
+        while (head1 != null && head2 != null){
+
+            if ((int)head1.data < (int)head2.data){
+                linkedNode.next = head1;
+                head1 = head1.next;
+            }else {
+                linkedNode.next = head2;
+                head2 = head2.next;
+            }
+
+            linkedNode = linkedNode.next;
+        }
+
+        linkedNode.next = head1 == null ? head2 : head1;
+
+        return head;
+    }
 
 }
