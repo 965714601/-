@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.稀疏数组/01.稀疏数组.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.稀疏数组/稀疏数组.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/02.数组模拟队列.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/src/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.数组模拟队列/数组模拟队列.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.单链表/src/LinkedNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.单链表/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/稀疏数组/src/sparseArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/稀疏数组/src/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/稀疏数组/稀疏数组.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +47,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="03.单链表" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sparseArray" />
       <module name="稀疏数组" />
@@ -84,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.sparseArray" />
       </list>
@@ -100,7 +100,10 @@
       <option name="presentableId" value="Default" />
       <updated>1630727534857</updated>
       <workItem from="1630727536147" duration="1815000" />
-      <workItem from="1630729435885" duration="17244000" />
+      <workItem from="1630729435885" duration="17249000" />
+      <workItem from="1630763036623" duration="697000" />
+      <workItem from="1630817734437" duration="1922000" />
+      <workItem from="1630896646843" duration="5851000" />
     </task>
     <servers />
   </component>
@@ -112,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -143,16 +148,6 @@
           <url>file://$PROJECT_DIR$/02.数组模拟队列/src/test.java</url>
           <line>20</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/02.数组模拟队列/src/ArrayQueue.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
