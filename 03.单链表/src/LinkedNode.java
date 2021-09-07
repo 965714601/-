@@ -6,6 +6,7 @@
  */
 public class LinkedNode<T> {
     private  static  LinkedNode head = new LinkedNode(null,null);
+    public LinkedNode _next;
     private LinkedNode next;
     private T data;
 
@@ -13,10 +14,20 @@ public class LinkedNode<T> {
     public LinkedNode(T data) {
         this.data = data;
         this.next = null;
+        this._next = null;
     }
 
     public T getData() {
         return data;
+    }
+
+    public void setNext(LinkedNode linkedNode){
+        this.next = linkedNode;
+        this._next = linkedNode;
+    }
+
+    public LinkedNode getNext(){
+       return this.next;
     }
 
     public void setData(T data) {
@@ -25,6 +36,7 @@ public class LinkedNode<T> {
 
     public LinkedNode(LinkedNode linkedNode, T data){
         this.next = linkedNode;
+        this._next = linkedNode;
         this.data = data;
     }
 

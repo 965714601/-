@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03.单链表/src/MergeLinkedListTest.java" afterDir="false" />
+    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="第三天">
+      <change afterPath="$PROJECT_DIR$/03.单链表/src/Josephu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03.单链表/src/JosephuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03.单链表/src/LinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/03.单链表/src/LinkedNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.单链表/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/03.单链表/src/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MergeLinkedListTest">
+  <component name="RunManager" selected="Application.JosephuTest">
+    <configuration name="JosephuTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JosephuTest" />
+      <module name="03.单链表" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MergeLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MergeLinkedListTest" />
       <module name="03.单链表" />
@@ -90,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JosephuTest" />
         <item itemvalue="Application.MergeLinkedListTest" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.test" />
@@ -111,7 +119,7 @@
       <workItem from="1630729435885" duration="17249000" />
       <workItem from="1630763036623" duration="697000" />
       <workItem from="1630817734437" duration="1922000" />
-      <workItem from="1630896646843" duration="19706000" />
+      <workItem from="1630896646843" duration="25915000" />
     </task>
     <task id="LOCAL-00001" summary="第三天 单链表 增删改查">
       <created>1630902969211</created>
@@ -175,6 +183,16 @@
           <url>file://$PROJECT_DIR$/03.单链表/src/MergeLinkedListTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/03.单链表/src/Josephu.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/03.单链表/src/Josephu.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
