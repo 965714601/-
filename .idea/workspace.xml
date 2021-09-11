@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03.单链表/03.单链表.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.栈/04.栈.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.栈/src/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.栈/src/expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.栈/src/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.栈/前缀表达式.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.栈/src/expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/04.栈/src/expression.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +33,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29307806" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\数据结构\尚硅谷韩顺平老师数据结构分享\DataStructure\04.栈" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,7 +126,7 @@
       <workItem from="1630896646843" duration="31515000" />
       <workItem from="1631156473424" duration="7598000" />
       <workItem from="1631248957984" duration="16565000" />
-      <workItem from="1631352486876" duration="1926000" />
+      <workItem from="1631352486876" duration="8624000" />
     </task>
     <task id="LOCAL-00001" summary="第三天 单链表 增删改查">
       <created>1630902969211</created>
@@ -210,33 +211,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>157</line>
+          <line>149</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="71" />
+          <line>177</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

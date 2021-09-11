@@ -150,4 +150,118 @@ public class expression {
         return  c;
     }
 
+
+    /**
+     *  前缀转后缀表达式    网址：https://blog.csdn.net/sgbfblog/article/details/8001651
+     *
+     *  中缀表达式a + b*c + (d * e + f) * g，其转换成后缀表达式则为a b c * + d e * f  + g * +。
+     *      "1 + 2*2 + (4 * 1 + 6) * 1" =====>>   122*+41*6+1*+
+     * 转换过程需要用到栈，具体过程如下：
+     *
+     * 1）如果遇到操作数，我们就直接将其输出。
+     *
+     * 2）如果遇到操作符，则我们将其放入到栈中，遇到左括号时我们也将其放入栈中。
+     *
+     * 3）如果遇到一个右括号，则将栈元素弹出，将弹出的操作符输出直到遇到左括号为止。注意，左括号只弹出并不输出。
+     *
+     * 4）如果遇到任何其他的操作符，如（“+”， “*”，“（”）等，从栈中弹出元素直到遇到发现更低优先级的元素(或者栈为空)为止。弹出完这些元素后，才将遇到的操作符压入到栈中。
+     * 有一点需要注意，只有在遇到" ) "的情况下我们才弹出" ( "，其他情况我们都不会弹出" ( "。
+     *
+     * 5）如果我们读到了输入的末尾，则将栈中所有元素依次弹出。
+     * */
+
+    public String toSuffix(){
+
+        ArrayStack<String> arrayStack = new ArrayStack<>(String.class, s.length());
+        StringBuilder sb = new StringBuilder();
+        //int flag = 0;   //左括号的数量
+        for (int i = 0; i <= s.length() - 1; i++) {
+
+            String value = String.valueOf(this.s.charAt(i));
+
+            if (" ".equals(value))  continue;
+
+            //如果是数字直接输出到字符串中
+            if (isNumeric(value)){
+                sb.append(s.charAt(i));
+            }
+            //如果不是数字直接压入栈中
+            else {
+                //栈空
+                if (arrayStack.isEmpty()){
+                    arrayStack.push(value);
+                }
+                //栈不空
+                else {
+                    //如果操作数为"("
+                    if (value.equals("("))
+                        arrayStack.push(value);
+                    //如果操作数为")"
+                    else if(value.equals(")")){
+                            while (!arrayStack.getPop().equals("("))
+                                sb.append(arrayStack.pop());
+                            if (arrayStack.getPop().equals("("))
+                                arrayStack.pop();
+                    }
+                    else {
+                        //比较栈顶操作数和读到的操作数
+                        while (true){
+
+                            if (arrayStack.isEmpty())
+                                break;
+
+                            if (arrayStack.getPop().equals("("))
+                                break;
+
+                            if (compareAB(value,arrayStack.getPop()))
+                                break;
+                            else
+                                sb.append(arrayStack.pop());
+
+                        }
+                        arrayStack.push(value);
+                    }
+                }
+            }
+        }
+
+        while (!arrayStack.isEmpty())
+            sb.append(arrayStack.pop());
+
+        return ""+sb;
+    }
+
+    /**
+     * a 为读到的操作符，b为栈中的操作符
+     * */
+    private boolean compareAB(String a, String b){
+        if ((a.equals("*") || a.equals("/") ) && (b.equals("+") || b.equals("-"))){
+            return true;
+        }
+        else return false;
+    }
+
+    /**
+     * 计算后缀表达式      例子：122*+41*6+1*+  结果：15
+     *
+     * 从左至右扫描表达式，遇到数字时，将数字压入堆栈，遇到运算符时，弹出栈顶的两个数，用运算符对它们做相应的计算（次顶元素 和 栈顶元素），
+     * 并将结果入栈；重复上述过程直到表达式最右端，最后运算得出的值即为表达式的结果.
+     * */
+    public Integer calculateSuffix(String s){
+        ArrayStack<Integer> arrayStack = new ArrayStack<>(Integer.class, s.length());
+        ArrayStack<String> tempStack = new ArrayStack<>(String.class,  s.length());
+
+        for (int i = 0; i < s.length(); i++) {
+            String value = String.valueOf(s.charAt(i));
+            if (isNumeric(value))
+                arrayStack.push(Integer.parseInt(value));
+            else {
+                int a = arrayStack.pop();
+                int b = arrayStack.pop();
+                arrayStack.push(calculate(a,b,value));
+            }
+        }
+
+        return arrayStack.pop();
+    }
 }
