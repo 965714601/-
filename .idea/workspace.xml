@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="第三天">
-      <change afterPath="$PROJECT_DIR$/03.单链表/src/Josephu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.单链表/src/JosephuTest.java" afterDir="false" />
+    <list default="true" id="216095d7-3b1b-4118-b8ba-f8ba75d18c4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/03.单链表/03.单链表.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.栈/04.栈.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.栈/src/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.栈/src/expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04.栈/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.单链表/src/LinkedNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/03.单链表/src/LinkedNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +50,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JosephuTest">
+  <component name="RunManager" selected="Application.expressionTest">
+    <configuration name="ArrayStackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayStackTest" />
+      <module name="04.栈" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JosephuTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JosephuTest" />
       <module name="03.单链表" />
@@ -55,30 +65,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MergeLinkedListTest" />
-      <module name="03.单链表" />
+    <configuration name="customerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customerTest" />
+      <module name="04.栈" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="03.单链表" />
+    <configuration name="expressionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expressionTest" />
+      <module name="04.栈" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sparseArray" />
-      <module name="稀疏数组" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="02.数组模拟队列" />
+      <module name="04.栈" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.expressionTest" />
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.customerTest" />
+        <item itemvalue="Application.ArrayStackTest" />
         <item itemvalue="Application.JosephuTest" />
-        <item itemvalue="Application.MergeLinkedListTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.sparseArray" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +122,10 @@
       <workItem from="1630729435885" duration="17249000" />
       <workItem from="1630763036623" duration="697000" />
       <workItem from="1630817734437" duration="1922000" />
-      <workItem from="1630896646843" duration="25915000" />
+      <workItem from="1630896646843" duration="31515000" />
+      <workItem from="1631156473424" duration="7598000" />
+      <workItem from="1631248957984" duration="16565000" />
+      <workItem from="1631352486876" duration="1926000" />
     </task>
     <task id="LOCAL-00001" summary="第三天 单链表 增删改查">
       <created>1630902969211</created>
@@ -128,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630902969211</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第四天 约瑟夫环实现">
+      <created>1630996759928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630996759928</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +162,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第三天 单链表 增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三天 单链表 增删改查" />
+    <MESSAGE value="第四天 约瑟夫环实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四天 约瑟夫环实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,7 +208,42 @@
           <line>71</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/04.栈/src/expression.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="arrayStack" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
